@@ -1,0 +1,8 @@
+bin
+obj
+
+# CodeBlocks
+*.cbp
+*.depend
+*.layout
+sauvegarde[0-9].txt
