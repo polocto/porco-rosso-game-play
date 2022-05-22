@@ -168,15 +168,6 @@ void jeu( int n_perso, char niveau[40], int charge )
         //rest(800);
         temps_pause = clock() ;
         while(!key[KEY_ESC] && temps_pause + 4000 > clock() );
-        /*if(nombre_de_perso[1] > nombre_de_perso[0])
-        {
-            if(strcmp(niveau, "niveau3.txt") == 0)
-                degradee(buffer, "fin.bmp");
-            else
-                degradee(buffer, "win.bmp");
-        }
-        else
-            degradee(buffer, "gameover.bmp");*/
     }
     //libération des allocation dynamique de la mémoire
     free(fin);

@@ -173,6 +173,7 @@ void initialisation( t_scroller** fond, t_perso** acteur, int n_perso, t_collect
 void initialisation_des_collections( t_collection* missiles, t_ennemis* ennemis_collec, t_explosions*feu, t_objets* bonus ) ;
 
 ///Chargement
+void init_oiseau(t_commun*mechant, BITMAP*image, int nb_image);
 void chargement_perso(t_perso* acteur, t_collection* missiles, int nombre_vie, t_explosions* feu, int k, t_objets* objet, int* nb_de_perso, int i, int score, char * niveau, t_ennemis*mechant ) ;
 int chargement_ennemi(t_ennemi*mechant, t_collection* missiles, t_explosions* feu, int x, int y, int vie, int dy, char image[30], int nb_image ) ;
 void chargement_fond(t_scroller* fond, int taille_x, int taille_y, int dx, int dy, int fin, char* nom ) ;
@@ -241,6 +242,7 @@ void suppression_de_tout_les_tirs( t_munition* courant, t_collection* missiles )
 void condition_suppression_objet( t_objet** courant, t_objets* ancre );
 void SuppressionObjet(t_objet * suppression, t_objets * ancre);
 void suppression_de_tout_les_objets( t_objets* ancre );
+void suppression_de_tout_les_explosions( t_explosions* ancre );
 
 ///Gestion bonus et nouveau corps
 void nouveau_corps_sur_screen( t_ennemis* ennemis_collec, t_objets* bonus, t_scroller* tabAttente, t_collection* missiles, t_explosions* feu, int taille, int*k, t_scroller* fond, t_perso* acteur, int n_perso ) ;
